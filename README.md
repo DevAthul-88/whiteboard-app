@@ -209,6 +209,7 @@ npm start        # Start production server
 npm run lint     # Run ESLint
 ```
 ---
+
 ## 🔒 Privacy & Security
 
 - **GDPR Compliant**: User data export/deletion available
@@ -217,7 +218,7 @@ npm run lint     # Run ESLint
 - **No Tracking**: No third-party analytics without consent
 
 Please review our [Privacy Policy](https://realtimewhiteboardv0.netlify.app/privacy) for details.
----
+
 ## 🔧 Troubleshooting
 
 ### Common Issues
