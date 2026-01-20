@@ -11,7 +11,7 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 
 ## 🎯 Live Demo
 
-**[View Live Demo →](https://whiteboard.netlify.app/)**
+**[View Live Demo →](https://realtimewhiteboardv0.netlify.app/)**
 
 ## Features
 
@@ -208,8 +208,32 @@ npm run build    # Create production build
 npm start        # Start production server
 npm run lint     # Run ESLint
 ```
+---
+## 🔒 Privacy & Security
 
+- **GDPR Compliant**: User data export/deletion available
+- **Data Storage**: All data stored in EU region (Supabase EU)
+- **Authentication**: Secure session management via Supabase Auth
+- **No Tracking**: No third-party analytics without consent
 
+Please review our [Privacy Policy](https://realtimewhiteboardv0.netlify.app/privacy) for details.
+---
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**Realtime not working?**
+- Check Supabase project is active
+- Verify RLS policies are set correctly
+- Check browser console for WebSocket errors
+
+**Canvas not rendering?**
+- Ensure browser supports HTML5 Canvas
+- Check React-Konva compatibility
+
+**Docker build fails?**
+- Verify Node.js version in Dockerfile matches local
+- Clear Docker cache: `docker system prune -a`
 ---
 
 ## Contributing
