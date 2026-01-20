@@ -1,5 +1,10 @@
 # Realtime Whiteboard App
 
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/Docker-ready-blue)](https://www.docker.com/)
+
 A modern, realtime collaborative whiteboard and chat application built with **Next.js**, **Supabase**, **React-Konva**, **Chakra UI**, **TypeScript**, and **Docker**. Designed for teams that need fast, low-friction collaboration with persistent rooms, drawing tools, and integrated chat.
 
 ---
