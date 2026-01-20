@@ -9,6 +9,10 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 
 ---
 
+## 🎯 Live Demo
+
+**[View Live Demo →](https://whiteboard.netlify.app/)**
+
 ## Features
 
 - **Realtime whiteboard**  
