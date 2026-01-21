@@ -17,20 +17,15 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 
 ## 📸 Screenshots
 
-### Landing Page
-![Landing Page](https://i.ibb.co/5XdbGDpw/w2.png)
+![Screenshot 1](https://i.ibb.co/5XdbGDpw/w2.png)
 
-### Authentication
-![Sign In Page](https://i.ibb.co/0Rjdpkvh/w3.png)
+![Screenshot 2](https://i.ibb.co/0Rjdpkvh/w3.png)
 
-### Dashboard
-![Dashboard View](https://i.ibb.co/jkkJzRcW/w4.png)
+![Screenshot 3](https://i.ibb.co/jkkJzRcW/w4.png)
 
-### Whiteboard in Action
-![Collaborative Whiteboard](https://i.ibb.co/27Lxzz4C/w5.png)
+![Screenshot 4](https://i.ibb.co/27Lxzz4C/w5.png)
 
-### Realtime Collaboration
-![Realtime Features](https://i.ibb.co/FqV8k8mw/w6.png)
+![Screenshot 5](https://i.ibb.co/FqV8k8mw/w6.png)
 
 ---
 
