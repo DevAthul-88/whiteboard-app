@@ -38,13 +38,14 @@ export async function updateSession(request: NextRequest) {
     !request.nextUrl.pathname.startsWith('/auth') &&
     !request.nextUrl.pathname.startsWith('/room/join') &&
     request.nextUrl.pathname !== '/' &&
-    request.nextUrl.pathname !== '/privacy'
+    request.nextUrl.pathname !== '/privacy' &&
+    request.nextUrl.pathname !== '/terms' &&
+    request.nextUrl.pathname !== '/docs'
   ) {
     const url = request.nextUrl.clone();
     url.pathname = '/auth/login';
     return NextResponse.redirect(url);
   }
-
 
   return supabaseResponse;
 }
