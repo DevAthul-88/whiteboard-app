@@ -583,7 +583,7 @@ export default function Documentation() {
                         <HStack gap={6} fontSize="sm" flexWrap="wrap">
                             <Link 
                                 as={NextLink} 
-                                href="/privacy-policy" 
+                                href="/privacy" 
                                 color="fg.muted"
                                 _hover={{ color: 'blue.500', textDecoration: 'none' }}
                             >
@@ -591,7 +591,7 @@ export default function Documentation() {
                             </Link>
                             <Link 
                                 as={NextLink} 
-                                href="/terms-of-service" 
+                                href="/terms" 
                                 color="fg.muted"
                                 _hover={{ color: 'blue.500', textDecoration: 'none' }}
                             >

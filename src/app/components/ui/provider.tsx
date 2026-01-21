@@ -6,7 +6,7 @@ import { ColorModeProvider } from './color-mode';
 export function Provider(props: { children: React.ReactNode }) {
   return (
     <ChakraProvider value={defaultSystem}>
-      <ColorModeProvider {...props} />
+      <ColorModeProvider {...props} forcedTheme="dark" />
     </ChakraProvider>
   );
 }
