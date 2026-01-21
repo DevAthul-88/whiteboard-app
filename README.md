@@ -13,6 +13,27 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 
 **[View Live Demo →](https://realtimewhiteboardv0.netlify.app/)**
 
+---
+
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](https://i.ibb.co/5XdbGDpw/w2.png)
+
+### Authentication
+![Sign In Page](https://i.ibb.co/0Rjdpkvh/w3.png)
+
+### Dashboard
+![Dashboard View](https://i.ibb.co/jkkJzRcW/w4.png)
+
+### Whiteboard in Action
+![Collaborative Whiteboard](https://i.ibb.co/27Lxzz4C/w5.png)
+
+### Realtime Collaboration
+![Realtime Features](https://i.ibb.co/FqV8k8mw/w6.png)
+
+---
+
 ## Features
 
 - **Realtime whiteboard**  
@@ -41,6 +62,7 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 - **Canvas rendering:** React-Konva (Konva.js)
 - **UI library:** Chakra UI
 - **Styling:** Global CSS + Chakra theming
+- **Testing:** Jest + React Testing Library
 - **Tooling:** ESLint, PostCSS
 - **Runtime & packaging:** Node.js, Docker, Docker Compose
 
@@ -50,6 +72,10 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 
 ```text
 .
+├── __mocks__/               # Mock files for testing (SVG, images, etc.)
+├── __tests__/               # Test files
+│   ├── login.page.test.tsx  # Authentication tests
+│   └── middleware.test.ts   # Middleware tests
 ├── public/                  # Static assets (images, icons, etc.)
 ├── src/
 │   └── app/
@@ -66,12 +92,15 @@ A modern, realtime collaborative whiteboard and chat application built with **Ne
 │       ├── layout.tsx       # Root layout (App Router)
 │       └── page.tsx         # Landing page
 ├── .dockerignore
+├── .env.example             # Example environment variables
 ├── .env.local               # Local environment variables (not committed)
 ├── .gitignore
 ├── db_query.md              # Database schema / query notes
 ├── docker-compose.yml       # Docker Compose configuration
 ├── Dockerfile               # Multi-stage Docker build
 ├── eslint.config.mjs        # ESLint configuration
+├── jest.config.ts           # Jest testing configuration
+├── jest.setup.ts            # Jest setup file
 ├── middleware.ts            # Next.js middleware (auth, routing, etc.)
 ├── next-env.d.ts
 ├── next.config.ts
@@ -111,7 +140,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 ```
 
-Do **not** commit this file to version control.
+Do **not** commit this file to version control. Use `.env.example` as a reference.
 
 ---
 
@@ -134,6 +163,30 @@ http://localhost:3000
 ```
 
 You should see the landing page, from which you can authenticate (if enabled), access the dashboard, and create/join rooms.
+
+---
+
+## Testing
+
+Run the test suite:
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm test -- --watch
+
+# Run tests with coverage
+npm test -- --coverage
+```
+
+The test suite includes:
+- Authentication flow tests
+- Middleware guard tests
+- Component unit tests
+
+Tests are configured with Jest and React Testing Library.
 
 ---
 
@@ -172,7 +225,7 @@ This will:
 
 ### Realtime Whiteboard
 
-- Canvas rendering is handled via **React-Konva**, which wraps Konva’s 2D canvas API with React components.
+- Canvas rendering is handled via **React-Konva**, which wraps Konva's 2D canvas API with React components.
 - Drawing actions (e.g., strokes, shapes) are persisted and/or broadcast via Supabase, allowing multiple users to see updates in realtime.
 
 
@@ -207,6 +260,7 @@ npm run dev      # Start development server
 npm run build    # Create production build
 npm start        # Start production server
 npm run lint     # Run ESLint
+npm test         # Run test suite
 ```
 ---
 
@@ -235,6 +289,12 @@ Please review our [Privacy Policy](https://realtimewhiteboardv0.netlify.app/priv
 **Docker build fails?**
 - Verify Node.js version in Dockerfile matches local
 - Clear Docker cache: `docker system prune -a`
+
+**Tests failing?**
+- Run `npm install` to ensure all dependencies are installed
+- Check Jest configuration in `jest.config.ts`
+- Clear Jest cache: `npm test -- --clearCache`
+
 ---
 
 ## Contributing
